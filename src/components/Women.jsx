@@ -4,12 +4,12 @@ import { useEffect, useRef, useState } from "react";
 
 function Men() {
   const URL =
-    "https://api.sheety.co/34c39d637eb252932fdba3472fda0ec6/solmareWomen/women";
+    "https://api.sheety.co/f40e83c8b5e18303131dd886f89e7b16/solmareWomen/women";
   const [products, setProducts] = useState([]);
   const sliderRef = useRef(null);
 
   /*
-  let url = 'https://api.sheety.co/34c39d637eb252932fdba3472fda0ec6/solmareWomen/women';
+  let url = 'https://api.sheety.co/f40e83c8b5e18303131dd886f89e7b16/solmareWomen/women';
 fetch(url)
 .then((response) => response.json())
 .then(json => {
@@ -51,10 +51,9 @@ fetch(url)
       <div className={styles.description}>
         <p className={styles.descTitle}>Women Products</p>
         <p className={styles.descText}>
-          A versatile collection of men’s fragrances combining fresh summer
-          citrus, clean aquatic notes, aromatic herbs, and warm winter woods.
-          Perfect for daily wear or special occasions, blending classic European
-          elegance with deep oriental richness to suit every season and style.
+          Experience elegant and captivating scents that embody grace, charm,
+          and individuality. Our women’s collection is made to inspire
+          confidence and highlight your unique style.
         </p>
       </div>
 

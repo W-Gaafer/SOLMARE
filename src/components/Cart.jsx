@@ -38,7 +38,7 @@ function Cart() {
     Customer Info: \n Name: ${customer.name} \n Address: ${customer.address} \n Phone: ${customer.phone} \n
     What about total cost & delivery date ?`;
 
-    const phoneNumber = "201149889121";
+    const phoneNumber = "201281971312";
     // افتح الواتساب
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message

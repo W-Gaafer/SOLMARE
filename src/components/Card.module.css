@@ -91,3 +91,13 @@
   cursor: pointer;
   font-weight: bold;
 }
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.soldOut {
+  background-color: #333;
+  border-color: gray;
+}

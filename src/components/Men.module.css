@@ -76,6 +76,34 @@
   color: #ddd;
 }
 
+/* 💻 تابلت */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section {
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px 50px;
+  }
+
+  .bigTitle {
+    width: 100%;
+    font-size: 56px;
+  }
+
+  .slider {
+    width: 70%;
+    max-width: 500px;
+  }
+
+  .description {
+    width: 80%;
+    text-align: center;
+  }
+
+  .descText {
+    color: #333;
+  }
+}
+
 /* 📱 موبايل */
 @media (max-width: 768px) {
   .section {
@@ -107,29 +135,6 @@
 
   .descText {
     font-size: 14px;
-  }
-}
-
-/* 💻 تابلت */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .section {
-    flex-direction: column;
-    gap: 50px;
-    padding: 100px 50px;
-  }
-
-  .bigTitle {
-    width: 100%;
-    font-size: 56px;
-  }
-
-  .slider {
-    width: 70%;
-    max-width: 500px;
-  }
-
-  .description {
-    width: 80%;
-    text-align: center;
+    color: #333;
   }
 }

@@ -4,6 +4,7 @@ import { useCart } from "../contexts/CartContext";
 
 function Card({ item }) {
   const { addToCart } = useCart();
+  const isSoldOut = item.soldOut === true || item.soldOut === "true";
 
   return (
     <div className={styles.card}>
@@ -27,8 +28,11 @@ function Card({ item }) {
           </span>
         </div>
       </div>
-      <button className={styles.button} style={{}}>
-        {item.soldOut === true || item.soldOut === "true" ? (
+      <button
+        className={`${styles.button} ${isSoldOut ? styles.soldOut : ""}`}
+        disabled={isSoldOut}
+      >
+        {isSoldOut ? (
           ""
         ) : (
           <RiShoppingBag4Line fontSize={"25px"} color="#ffd700" />
@@ -38,9 +42,7 @@ function Card({ item }) {
           style={{ fontSize: "14px", color: "#ffd700", margin: "10px 5px" }}
           onClick={() => addToCart(item)}
         >
-          {item.soldOut === true || item.soldOut === "true"
-            ? "Sold Out"
-            : "Add to Cart"}
+          {isSoldOut ? "Sold Out" : "Add to Cart"}
         </p>
       </button>
     </div>

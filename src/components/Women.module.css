@@ -107,6 +107,7 @@
 
   .descText {
     font-size: 14px;
+    color: #333;
   }
 }
 
@@ -131,5 +132,9 @@
   .description {
     width: 80%;
     text-align: center;
+  }
+  .descText {
+    font-size: 14px;
+    color: #333;
   }
 }

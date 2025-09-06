@@ -6,6 +6,8 @@ import { HashLink } from "react-router-hash-link";
 
 function Header() {
   const { cartItems } = useCart();
+  
+
   return (
     <header className={styles.header}>
       <Link to="/">
