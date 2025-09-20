@@ -34,8 +34,12 @@ function Cart() {
       )
       .join("\n");
 
-    const message = `Hi SOLMARE Customer Service \n My Order Details:\n${itemsMessage}\n Order Cost: ${totalCart} LE \n
-    Customer Info: \n Name: ${customer.name} \n Address: ${customer.address} \n Phone: ${customer.phone} \n
+    const message = `Hi SOLMARE Customer Service \n My Order Details:\n${itemsMessage}\n Order Cost: ${Math.ceil(
+      totalCart
+    )} LE \n
+    Customer Info: \n Name: ${customer.name} \n Address: ${
+      customer.address
+    } \n Phone: ${customer.phone} \n
     What about total cost & delivery date ?`;
 
     const phoneNumber = "201281971312";
